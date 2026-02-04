@@ -112,8 +112,7 @@ export const WhyUs = () => {
                 </p>
 
                 <Button variant="gradient" size="lg" asChild>
-                  <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">   
-@kasmarry<Instagram className="w-5 h-5 mr-2" />
+                  <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">    @kasmarry<Instagram className="w-5 h-5 mr-2" />
                     @kasmarry
                   </a>
                 </Button>
