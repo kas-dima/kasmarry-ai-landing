@@ -1,64 +1,64 @@
 import { motion } from "framer-motion";
 import { Camera, Palette, Clock, ArrowRight } from "lucide-react";
-
-const steps = [
-  {
-    icon: Camera,
-    title: "Отправьте селфи",
-    description: "Загрузите 10-15 ваших фото. Лучше всего подойдёт естественное освещение!",
-    step: "01",
-  },
-  {
-    icon: Palette,
-    title: "Выберите стиль",
-    description: "Выберите из 100+ профессиональных стилей — бизнес, фэшн, фэнтези и другие.",
-    step: "02",
-  },
-  {
-    icon: Clock,
-    title: "Получите результат за 24ч",
-    description: "Получите потрясающие AI-портреты, готовые к публикации.",
-    step: "03",
-  },
-];
-
+const steps = [{
+  icon: Camera,
+  title: "Отправьте селфи",
+  description: "Загрузите 10-15 ваших фото. Лучше всего подойдёт естественное освещение!",
+  step: "01"
+}, {
+  icon: Palette,
+  title: "Выберите стиль",
+  description: "Выберите из 100+ профессиональных стилей — бизнес, фэшн, фэнтези и другие.",
+  step: "02"
+}, {
+  icon: Clock,
+  title: "Получите результат за 24ч",
+  description: "Получите потрясающие AI-портреты, готовые к публикации.",
+  step: "03"
+}];
 const containerVariants = {
-  hidden: { opacity: 0 },
+  hidden: {
+    opacity: 0
+  },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
-    },
-  },
+      staggerChildren: 0.2
+    }
+  }
 };
-
 const itemVariants = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: {
+    opacity: 0,
+    y: 40
+  },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut" as const,
-    },
-  },
+      ease: "easeOut" as const
+    }
+  }
 };
-
 export const HowItWorks = () => {
-  return (
-    <section className="py-20 md:py-28 relative">
+  return <section className="py-20 relative md:py-[20px]">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-card/50 to-transparent pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 30
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.6
+      }} className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Как это <span className="gradient-text">работает</span>
           </h2>
@@ -68,26 +68,16 @@ export const HowItWorks = () => {
         </motion.div>
 
         {/* Steps */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid md:grid-cols-3 gap-8 lg:gap-12"
-        >
-          {steps.map((step, index) => (
-            <motion.div
-              key={step.step}
-              variants={itemVariants}
-              className="relative group"
-            >
+        <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{
+        once: true,
+        margin: "-100px"
+      }} className="grid md:grid-cols-3 gap-8 lg:gap-12">
+          {steps.map((step, index) => <motion.div key={step.step} variants={itemVariants} className="relative group">
               {/* Connection line */}
-              {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-16 left-[60%] w-[80%] h-px">
+              {index < steps.length - 1 && <div className="hidden md:block absolute top-16 left-[60%] w-[80%] h-px">
                   <div className="w-full h-full bg-gradient-to-r from-primary/50 to-transparent" />
                   <ArrowRight className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 text-primary/50" />
-                </div>
-              )}
+                </div>}
 
               <div className="glass-card rounded-2xl p-8 h-full group-hover:border-primary/30 transition-all duration-300">
                 {/* Step number */}
@@ -105,10 +95,8 @@ export const HowItWorks = () => {
                 <h3 className="text-xl font-bold mb-3">{step.title}</h3>
                 <p className="text-muted-foreground">{step.description}</p>
               </div>
-            </motion.div>
-          ))}
+            </motion.div>)}
         </motion.div>
       </div>
-    </section>
-  );
+    </section>;
 };

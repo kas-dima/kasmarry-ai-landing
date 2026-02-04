@@ -1,28 +1,34 @@
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
-
 export const About = () => {
-  return (
-    <section className="py-20 md:py-28 relative overflow-hidden">
+  return <section className="py-20 relative overflow-hidden md:py-[50px]">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-card/30 to-transparent pointer-events-none" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto text-center"
-        >
+        <motion.div initial={{
+        opacity: 0,
+        y: 40
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.8
+      }} className="max-w-3xl mx-auto text-center">
           {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          scale: 0.9
+        }} whileInView={{
+          opacity: 1,
+          scale: 1
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.5
+        }} className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted-foreground">Обо мне</span>
           </motion.div>
@@ -39,18 +45,20 @@ export const About = () => {
           </blockquote>
 
           {/* Signature */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-8"
-          >
-            <p className="text-xl font-semibold gradient-text">— Marry</p>
+          <motion.div initial={{
+          opacity: 0
+        }} whileInView={{
+          opacity: 1
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6,
+          delay: 0.3
+        }} className="mt-8">
+            <p className="text-xl font-semibold gradient-text">— Марина</p>
             <p className="text-sm text-muted-foreground mt-1">Основатель KasMarry AI</p>
           </motion.div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>;
 };

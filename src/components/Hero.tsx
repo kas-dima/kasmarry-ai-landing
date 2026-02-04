@@ -7,7 +7,7 @@ import beforeImage from "@/assets/gallery/artistic-kisses.jpg";
 import afterImage from "@/assets/gallery/fashion-elevator.jpg";
 const TELEGRAM_URL = "https://t.me/marry_pechataet";
 export const Hero = () => {
-  return <section className="relative min-h-screen pt-20 pb-16 overflow-hidden flex items-end justify-center">
+  return <section className="relative min-h-screen pt-20 pb-16 overflow-hidden flex items-end justify-center py-[20px]">
       {/* Background gradient orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
