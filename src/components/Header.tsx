@@ -53,7 +53,7 @@ export const Header = () => {
             className="hidden md:inline-flex"
           >
             <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
-              Get Photos
+              Заказать
             </a>
           </Button>
           

@@ -34,19 +34,18 @@ export const Hero = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6"
             >
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm text-muted-foreground">AI-Powered Photography</span>
+              <span className="text-sm text-muted-foreground">AI-Фотосессии</span>
             </motion.div>
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Professional Photoshoots{" "}
-              <span className="gradient-text">without a Photographer</span>
+              Глянцевые фотосессии{" "}
+              <span className="gradient-text">без фотографа</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-              Transform your selfies into magazine-quality portraits using Neural Networks. 
-              Fast, affordable, and stunning.
+              Создаем глянцевые фотосессии с помощью нейросетей. Без фотографов, студий и визажистов. Идеальный результат за 24 часа.
             </p>
 
             {/* CTA Button */}
@@ -63,7 +62,7 @@ export const Hero = () => {
                 className="group"
               >
                 <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
-                  Order in Telegram
+                  Заказать съемку в Telegram
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
@@ -78,17 +77,17 @@ export const Hero = () => {
             >
               <div>
                 <p className="text-2xl md:text-3xl font-bold gradient-text">100+</p>
-                <p className="text-sm text-muted-foreground">Styles</p>
+                <p className="text-sm text-muted-foreground">Стилей</p>
               </div>
               <div className="w-px h-12 bg-border" />
               <div>
-                <p className="text-2xl md:text-3xl font-bold gradient-text">24h</p>
-                <p className="text-sm text-muted-foreground">Delivery</p>
+                <p className="text-2xl md:text-3xl font-bold gradient-text">24ч</p>
+                <p className="text-sm text-muted-foreground">Доставка</p>
               </div>
               <div className="w-px h-12 bg-border" />
               <div>
                 <p className="text-2xl md:text-3xl font-bold gradient-text">1000+</p>
-                <p className="text-sm text-muted-foreground">Happy Clients</p>
+                <p className="text-sm text-muted-foreground">Довольных клиентов</p>
               </div>
             </motion.div>
           </motion.div>
@@ -107,11 +106,11 @@ export const Hero = () => {
                 <div className="relative overflow-hidden rounded-2xl gradient-border">
                   <img
                     src={beforeImage}
-                    alt="Before - Selfie"
+                    alt="До — Селфи"
                     className="w-36 md:w-48 h-52 md:h-72 object-cover image-hover"
                   />
                   <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm text-xs font-medium">
-                    Before
+                    До
                   </div>
                 </div>
               </div>
@@ -127,11 +126,11 @@ export const Hero = () => {
                 <div className="relative overflow-hidden rounded-2xl gradient-border glow-effect">
                   <img
                     src={afterImage}
-                    alt="After - Professional AI Portrait"
+                    alt="После — Профессиональный AI-портрет"
                     className="w-44 md:w-56 h-64 md:h-80 object-cover image-hover"
                   />
                   <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-gradient-to-r from-primary to-accent text-xs font-medium text-primary-foreground">
-                    AI Result
+                    AI Результат
                   </div>
                 </div>
               </div>

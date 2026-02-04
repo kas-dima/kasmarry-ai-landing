@@ -19,14 +19,14 @@ interface GalleryItem {
 }
 
 const galleryItems: GalleryItem[] = [
-  { id: 1, image: russianTraditional, title: "Royal Heritage", style: "Traditional" },
-  { id: 2, image: fashionElevator, title: "Urban Elegance", style: "Fashion" },
-  { id: 3, image: urbanFashion, title: "Neon Nights", style: "Cyberpunk" },
-  { id: 4, image: romanticCouple, title: "Winter Romance", style: "Couples" },
-  { id: 5, image: russianWinter, title: "Fairy Tale", style: "Fantasy" },
-  { id: 6, image: pinkAesthetic, title: "Pink Dreams", style: "Aesthetic" },
-  { id: 7, image: nightCity, title: "City Vibes", style: "Street" },
-  { id: 8, image: artisticKisses, title: "Self Love", style: "Artistic" },
+  { id: 1, image: russianTraditional, title: "Царское наследие", style: "Традиционный" },
+  { id: 2, image: fashionElevator, title: "Городская элегантность", style: "Фэшн" },
+  { id: 3, image: urbanFashion, title: "Неоновые ночи", style: "Киберпанк" },
+  { id: 4, image: romanticCouple, title: "Зимняя романтика", style: "Для пар" },
+  { id: 5, image: russianWinter, title: "Сказка", style: "Фэнтези" },
+  { id: 6, image: pinkAesthetic, title: "Розовые мечты", style: "Эстетика" },
+  { id: 7, image: nightCity, title: "Ритм города", style: "Уличный" },
+  { id: 8, image: artisticKisses, title: "Люби себя", style: "Арт" },
 ];
 
 const containerVariants = {
@@ -71,10 +71,10 @@ export const Gallery = () => {
           className="text-center mb-14"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Discover <span className="gradient-text">100+ Styles</span>
+            Более <span className="gradient-text">100 стилей</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            From elegant business portraits to creative fantasy shoots — your perfect look awaits.
+            От элегантных бизнес-портретов до креативных фэнтези-съемок — ваш идеальный образ ждёт вас.
           </p>
         </motion.div>
 
