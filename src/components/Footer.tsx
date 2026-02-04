@@ -21,8 +21,7 @@ export const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-muted-foreground flex items-center gap-1">Сделано
-KasMarry AI © 2026<Heart className="w-4 h-4 text-accent fill-accent" /> KasMarry AI © 2025
+          <p className="text-sm text-muted-foreground flex items-center gap-1">Сделано <Heart className="w-4 h-4 text-accent fill-accent" /> KasMarry AI © 2026
           </p>
         </div>
       </div>
