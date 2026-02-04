@@ -36,7 +36,7 @@ export const About = () => {
           {/* Quote */}
           <blockquote className="relative">
             <div className="absolute -top-6 -left-4 text-8xl text-primary/20 font-serif select-none">"</div>
-            <p className="text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed mb-8">   Привет! Я — Марина. Я объединяю эстетику и технологии, чтобы создать вашу цифровую лучшую версию. Твой идеальный кадр уже существует, осталось его проявить.<span className="gradient-text">Марина</span>. Я объединяю эстетику и технологии, 
+            <p className="text-2xl md:text-3xl lg:text-4xl font-medium leading-relaxed mb-8">   Привет! Я —<span className="gradient-text">Марина</span>. Я объединяю эстетику и технологии, 
               чтобы создать вашу цифровую лучшую версию. Твой идеальный кадр уже существует, 
               осталось его <span className="gradient-text">проявить</span>.
             </p>

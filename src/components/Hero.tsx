@@ -111,7 +111,7 @@ export const Hero = () => {
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl blur-xl opacity-50 group-hover:opacity-70 transition-opacity" />
                 <div className="relative overflow-hidden rounded-2xl gradient-border">
-                  <img src={beforeImage} alt="До — Селфи" className="w-36 md:w-48 h-52 md:h-72 object-cover image-hover" />
+                  <img alt="До — Селфи" className="w-36 md:w-48 h-52 md:h-72 object-cover image-hover" src="/lovable-uploads/5fdaa0b1-11f3-4be0-940a-b6397b1aa640.png" />
                   <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm text-xs font-medium">
                     До
                   </div>
