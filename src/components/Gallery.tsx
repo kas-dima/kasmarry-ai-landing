@@ -104,7 +104,7 @@ export const Gallery = () => {
         duration: 0.6
       }} className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Более <span className="gradient-text">100 стилей</span>
+            Более <span className="gradient-text">4000 стилей</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             От элегантных бизнес-портретов до креативных фэнтези-съемок — ваш идеальный образ ждёт вас.
