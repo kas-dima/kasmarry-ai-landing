@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle2, Instagram, Zap, DollarSign, Layers, Shield } from "lucide-react";
+import { Instagram, DollarSign, MapPin, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const INSTAGRAM_URL = "https://www.instagram.com/kasmarry";
@@ -7,23 +7,18 @@ const INSTAGRAM_URL = "https://www.instagram.com/kasmarry";
 const benefits = [
   {
     icon: DollarSign,
-    title: "Cheaper than a Real Shoot",
-    description: "Professional quality at a fraction of the cost.",
+    title: "Экономия бюджета",
+    description: "Результат глянцевого уровня по цене ужина в кафе.",
   },
   {
-    icon: Zap,
-    title: "No Studio Needed",
-    description: "Create stunning photos from the comfort of home.",
+    icon: MapPin,
+    title: "Локации всего мира",
+    description: "Париж, Бали или Киберпанк — без перелетов.",
   },
   {
-    icon: Layers,
-    title: "100+ Styles Available",
-    description: "Business, fashion, fantasy, cyberpunk, and more.",
-  },
-  {
-    icon: Shield,
-    title: "Privacy Guaranteed",
-    description: "Your photos are secure and never shared.",
+    icon: CheckCircle,
+    title: "Идеально с 1-го дубля",
+    description: "Никаких закрытых глаз и неудачных ракурсов.",
   },
 ];
 
@@ -65,10 +60,10 @@ export const WhyUs = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Why Choose <span className="gradient-text">KasMarry AI</span>?
+              Почему <span className="gradient-text">KasMarry AI</span>?
             </h2>
             <p className="text-muted-foreground text-lg mb-10">
-              Experience the future of professional photography with cutting-edge AI technology.
+              Испытайте будущее профессиональной фотографии с передовыми AI-технологиями.
             </p>
 
             <motion.ul
@@ -115,10 +110,10 @@ export const WhyUs = () => {
                 </div>
 
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                  Follow Our Journey
+                  Следите за нами
                 </h3>
                 <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-                  Get inspired by our latest AI creations and behind-the-scenes content on Instagram.
+                  Вдохновляйтесь нашими последними AI-работами и закулисным контентом в Instagram.
                 </p>
 
                 <Button
@@ -136,12 +131,12 @@ export const WhyUs = () => {
                 <div className="flex items-center justify-center gap-8 mt-10 pt-8 border-t border-border">
                   <div>
                     <p className="text-2xl font-bold gradient-text">5K+</p>
-                    <p className="text-sm text-muted-foreground">Followers</p>
+                    <p className="text-sm text-muted-foreground">Подписчиков</p>
                   </div>
                   <div className="w-px h-10 bg-border" />
                   <div>
                     <p className="text-2xl font-bold gradient-text">500+</p>
-                    <p className="text-sm text-muted-foreground">Posts</p>
+                    <p className="text-sm text-muted-foreground">Работ</p>
                   </div>
                 </div>
               </div>

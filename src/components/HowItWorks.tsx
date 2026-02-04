@@ -4,20 +4,20 @@ import { Camera, Palette, Clock, ArrowRight } from "lucide-react";
 const steps = [
   {
     icon: Camera,
-    title: "Send Your Selfies",
-    description: "Upload 10-15 photos of yourself. Natural lighting works best!",
+    title: "Отправьте селфи",
+    description: "Загрузите 10-15 ваших фото. Лучше всего подойдёт естественное освещение!",
     step: "01",
   },
   {
     icon: Palette,
-    title: "Choose Your Style",
-    description: "Pick from 100+ professional styles — business, fashion, fantasy, and more.",
+    title: "Выберите стиль",
+    description: "Выберите из 100+ профессиональных стилей — бизнес, фэшн, фэнтези и другие.",
     step: "02",
   },
   {
     icon: Clock,
-    title: "Get Results in 24h",
-    description: "Receive your stunning AI-generated portraits ready to share.",
+    title: "Получите результат за 24ч",
+    description: "Получите потрясающие AI-портреты, готовые к публикации.",
     step: "03",
   },
 ];
@@ -60,10 +60,10 @@ export const HowItWorks = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            How It <span className="gradient-text">Works</span>
+            Как это <span className="gradient-text">работает</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Three simple steps to your professional AI photoshoot.
+            Три простых шага до вашей профессиональной AI-фотосессии.
           </p>
         </motion.div>
 

@@ -37,7 +37,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-accent fill-accent" /> by KasMarry AI © 2025
+            Сделано с <Heart className="w-4 h-4 text-accent fill-accent" /> KasMarry AI © 2025
           </p>
         </div>
       </div>
