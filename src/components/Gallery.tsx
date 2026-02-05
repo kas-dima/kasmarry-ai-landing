@@ -11,7 +11,7 @@ import pinkAesthetic from "@/assets/gallery/pink-aesthetic.jpg";
 import nightCity from "@/assets/gallery/night-city.jpg";
 import artisticKisses from "@/assets/gallery/artistic-kisses.jpg";
 
-// Import new service images
+// Import service images
 import knittedArt from "@/assets/services/knitted-art.jpg";
 import birthdayGlam from "@/assets/services/birthday-glam.jpg";
 import lemonBath from "@/assets/services/lemon-bath.jpg";
@@ -23,8 +23,19 @@ import boxingWet from "@/assets/services/boxing-wet.jpg";
 import cartoonLove1 from "@/assets/services/cartoon-love1.jpg";
 import cartoonLove2 from "@/assets/services/cartoon-love2.jpg";
 
+// Import new gallery images
+import audiSnow from "@/assets/gallery/audi-snow.jpg";
+import bmwSnowDrift from "@/assets/gallery/bmw-snow-drift.jpg";
+import bmwNightGirl from "@/assets/gallery/bmw-night-girl.jpg";
+import farmFashion from "@/assets/gallery/farm-fashion.jpg";
+import wheatField from "@/assets/gallery/wheat-field.jpg";
+import tokyoCrosswalk from "@/assets/gallery/tokyo-crosswalk.jpg";
+import gasStation from "@/assets/gallery/gas-station.jpg";
+import porscheGraffiti from "@/assets/gallery/porsche-graffiti.jpg";
+import cityAerial from "@/assets/gallery/city-aerial.jpg";
+import f1Pitlane from "@/assets/gallery/f1-pitlane.jpg";
+
 const galleryImages = [
-  // First row images
   { src: russianTraditional, alt: "Царское наследие" },
   { src: fashionElevator, alt: "Городская элегантность" },
   { src: urbanFashion, alt: "Неоновые ночи" },
@@ -34,10 +45,14 @@ const galleryImages = [
   { src: lemonBath, alt: "Лимонная эстетика" },
   { src: burningCar, alt: "Кинематограф" },
   { src: moneyBath, alt: "Luxury стиль" },
+  { src: audiSnow, alt: "Дрифт на снегу" },
+  { src: bmwSnowDrift, alt: "Закатный дрифт" },
+  { src: wheatField, alt: "Русское поле" },
+  { src: tokyoCrosswalk, alt: "Токийский стиль" },
+  { src: f1Pitlane, alt: "Формула 1" },
 ];
 
 const galleryImagesRow2 = [
-  // Second row images  
   { src: russianWinter, alt: "Сказка" },
   { src: pinkAesthetic, alt: "Розовые мечты" },
   { src: nightCity, alt: "Ритм города" },
@@ -47,6 +62,11 @@ const galleryImagesRow2 = [
   { src: boxingWet, alt: "Спортивный образ" },
   { src: cartoonLove1, alt: "Мультяшный стиль" },
   { src: cartoonLove2, alt: "Анимация любви" },
+  { src: bmwNightGirl, alt: "Ночной драйв" },
+  { src: farmFashion, alt: "Ферма-глэм" },
+  { src: gasStation, alt: "Заправка" },
+  { src: porscheGraffiti, alt: "Граффити стиль" },
+  { src: cityAerial, alt: "Город с высоты" },
 ];
 
 const additionalServices = [
@@ -119,7 +139,7 @@ export const Gallery = () => {
             x: {
               repeat: Infinity,
               repeatType: "loop",
-              duration: 50,
+              duration: 60,
               ease: "linear",
             },
           }}
@@ -155,7 +175,7 @@ export const Gallery = () => {
             x: {
               repeat: Infinity,
               repeatType: "loop",
-              duration: 55,
+              duration: 65,
               ease: "linear",
             },
           }}
